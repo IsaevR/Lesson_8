@@ -13,13 +13,7 @@ namespace Lesson_8
         public int Length { get { return List.Length; } }
 
 
-        //public new void Add(T value)
-        //{
-        //    T[] newList = new T[List.Length + 1];
-        //    newList[Length] = value;
-
-        //    List = newList;
-        //}
+      
         public void Add2(params T[] value)
         {
             list.Add(value);
@@ -27,18 +21,7 @@ namespace Lesson_8
         public void Remove(int index)
         {
             list.RemoveAt(index);
-            ////T[] newList = new T[List.Length - 1];
-            
-            ////for (int i = 0; i <= List.Length; i++)
-            ////{
-            ////    newList[i] = List[i];
-            ////    if (index == i)
-            ////    {
-            ////        continue;
-            ////    }
-                    
-            //}
-            //List = newList;
+          
         }
 
         public IEnumerator<T[]> GetEnumerator()
@@ -52,14 +35,6 @@ namespace Lesson_8
         }
 
         public int Count { get { return list.Count; } }
-        //public new int  Count()
-        //{
-        //    int count = 0;
-        //    for (int i = 0; i < List.Length; i++)
-        //    {
-        //        count++;
-        //    }
-        //    return count;
-        //}
+      
     } 
 }
